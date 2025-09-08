@@ -63,6 +63,20 @@
     </style>
 </head>
 <body>
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+        <a href="{{ route('home') }}">
+            <button style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                Home
+            </button>
+        </a>
+
+        <a href="{{ route('about') }}">
+            <button style="padding: 10px 20px; background-color: #0077cc; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                About
+            </button>
+        </a>
+    </div>
+
     <div class="container">
         <h1>Profil Pribadi</h1>
         <img src="{{ asset('images/' . $data['foto']) }}" alt="Foto Profil" class="profile-img">
