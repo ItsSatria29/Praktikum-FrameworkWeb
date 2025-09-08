@@ -1,0 +1,89 @@
+/* Palet Warna */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #34495e;
+    --background-color: #f4f6f8;
+    --link-color: #3498db;
+    --link-hover-color: #2980b9;
+    --box-shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya Dasar */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--box-shadow-light);
+}
+
+/* Header dan Teks */
+h1, h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Tautan Navigasi */
+.nav-links {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Daftar */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #ecf0f1;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+}
+
+/* Gambar */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
