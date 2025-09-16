@@ -34,23 +34,4 @@ class GameController extends Controller
     {
         return view('game.edit', compact('game'));
     }
-
-    public function update(Request $request, Game $game)
-    {
-        $request->validate([
-            'title' => 'required',
-            'platform'   => 'required',
-            'genre'      => 'required',
-            'release_year'=> 'required|digits:4|integer',
-        ]);
-
-        $game->update($request->all());
-        return redirect()->route('game.index')->with('success','Game berhasil diupdate!');
-    }
-
-    public function destroy(Game $game)
-    {
-        $game->delete();
-        return redirect()->route('game.index')->with('success','Game berhasil dihapus!');
-    }
 }

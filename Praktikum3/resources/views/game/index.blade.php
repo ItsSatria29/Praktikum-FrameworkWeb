@@ -14,7 +14,6 @@
                 <th>Platform</th>
                 <th>Genre</th>
                 <th>Tahun Rilis</th>
-                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -24,15 +23,6 @@
                 <td>{{ $game->platform }}</td>
                 <td>{{ $game->genre }}</td>
                 <td>{{ $game->release_year }}</td>
-                <td>
-                    <a href="{{ route('game.edit',$game->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                    <form action="{{ route('game.destroy',$game->id) }}" method="POST" style="display:inline;">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger btn-sm"
-                            onclick="return confirm('Yakin mau hapus game ini?')">Hapus</button>
-                    </form>
-                </td>
             </tr>
             @endforeach
         </tbody>
